@@ -39,7 +39,7 @@ export default function MutualFundPortfolio({ data }) {
     <div className="bg-white p-6 rounded-xl shadow-sm">
       <div className="flex items-center justify-between mb-4">
         <div>
-          <h2 className="text-xl font-bold text-gray-800">My Funds ({data.funds.length})</h2>
+          <h2 className="text-xl font-bold text-gray-700">My Funds ({data.funds.length})</h2>
           <p className="text-sm text-gray-500 mt-1">Showing all mutual fund investments</p>
         </div>
         <div className="flex items-center space-x-4">
@@ -86,7 +86,7 @@ export default function MutualFundPortfolio({ data }) {
                 <tr key={fund.id} className="border-b border-gray-100 hover:bg-gray-50">
                   <td className="py-4">
                     <div>
-                      <p className="text-sm font-medium text-gray-800">{fund.name}</p>
+                      <p className="text-sm font-medium text-gray-700">{fund.name}</p>
                       <div className="flex items-center mt-1">
                         <span className="text-xs text-gray-500 mr-2">{fund.category}</span>
                         <span className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">
@@ -97,13 +97,13 @@ export default function MutualFundPortfolio({ data }) {
                   </td>
                   <td className="py-4 text-right">
                     <div>
-                      <p className="text-sm font-medium text-gray-800">₹{formatCurrency(fund.currentValue)}</p>
+                      <p className="text-sm font-medium text-gray-700">₹{formatCurrency(fund.currentValue)}</p>
                       <p className="text-xs text-gray-500">{fund.units.toFixed(2)} units</p>
                     </div>
                   </td>
                   <td className="py-4 text-right">
                     <div>
-                      <p className="text-sm font-medium text-gray-800">₹{formatCurrency(fund.investedAmount)}</p>
+                      <p className="text-sm font-medium text-gray-700">₹{formatCurrency(fund.investedAmount)}</p>
                       <p className="text-xs text-gray-500">NAV: ₹{fund.nav}</p>
                     </div>
                   </td>
@@ -159,13 +159,13 @@ export default function MutualFundPortfolio({ data }) {
             </svg>
             <span>Add New Fund</span>
           </button>
-          <button className="flex items-center space-x-1 text-sm text-gray-600 hover:text-gray-800">
+          <button className="flex items-center space-x-1 text-sm text-gray-600 hover:text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
             <span>Export</span>
           </button>
-          <button className="flex items-center space-x-1 text-sm text-gray-600 hover:text-gray-800">
+          <button className="flex items-center space-x-1 text-sm text-gray-600 hover:text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
             </svg>

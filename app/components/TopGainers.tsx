@@ -16,14 +16,14 @@ export default function TopGainers() {
   const renderStock = (stock, isGainer = true) => (
     <div key={stock.ticker} className="flex justify-between items-center p-3 border-b border-gray-100 hover:bg-gray-50">
       <div>
-        <p className="font-medium text-gray-800 text-sm">{stock.name}</p>
+        <p className="font-medium text-gray-700 text-sm">{stock.name}</p>
         <div className="flex items-center mt-1">
           <span className="text-xs text-gray-500 mr-2">{stock.ticker}</span>
           <span className="text-xs text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{stock.sector}</span>
         </div>
       </div>
       <div className="text-right">
-        <p className="font-medium text-gray-800 text-sm">₹{stock.price}</p>
+        <p className="font-medium text-gray-700 text-sm">₹{stock.price}</p>
         <p className={`text-xs mt-1 ${isGainer ? 'text-[#04B488]' : 'text-red-500'}`}>
           {isGainer ? '+' : ''}{stock.percentChange}%
         </p>
@@ -34,7 +34,7 @@ export default function TopGainers() {
   const renderList = (stocks, isGainer = true) => (
     <div className="bg-white rounded-lg border border-gray-200 shadow-sm h-full overflow-hidden">
       <div className="bg-gray-50 px-4 py-3 border-b border-gray-200">
-        <h3 className="font-medium text-gray-800">
+        <h3 className="font-medium text-gray-700">
           {isGainer ? 'Top Gainers' : 'Top Losers'}
         </h3>
       </div>

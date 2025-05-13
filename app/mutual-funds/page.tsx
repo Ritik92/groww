@@ -134,7 +134,7 @@ export default function MutualFunds() {
       <Header />
       <main className="max-w-7xl mx-auto px-4 py-8">
         <div className="flex flex-col space-y-6">
-          <h1 className="text-2xl font-bold text-gray-800">My Mutual Funds</h1>
+          <h1 className="text-2xl font-bold text-gray-700">My Mutual Funds</h1>
           
           {/* Portfolio Overview */}
           <MutualFundOverview data={portfolioData} />
@@ -144,14 +144,14 @@ export default function MutualFunds() {
 
           {/* Fund Categories */}
           <div className="bg-white p-6 rounded-xl shadow-sm">
-            <h2 className="text-xl font-bold text-gray-800 mb-4">Explore Categories</h2>
+            <h2 className="text-xl font-bold text-gray-700 mb-4">Explore Categories</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
               {fundCategories.map(category => (
                 <div 
                   key={category.id} 
                   className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:shadow-md transition-shadow"
                 >
-                  <h3 className="font-medium text-gray-800">{category.name}</h3>
+                  <h3 className="font-medium text-gray-700">{category.name}</h3>
                   <p className="text-sm text-gray-500">{category.count} Funds</p>
                 </div>
               ))}
@@ -161,14 +161,14 @@ export default function MutualFunds() {
           {/* Recommended Funds */}
           <div className="bg-white p-6 rounded-xl shadow-sm">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-xl font-bold text-gray-800">Recommended for You</h2>
+              <h2 className="text-xl font-bold text-gray-700">Recommended for You</h2>
               <button className="text-[#04B488] hover:text-[#039973] font-medium">View All</button>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {recommendedFunds.map(fund => (
                 <div key={fund.id} className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                   <div className="mb-2">
-                    <h3 className="font-medium text-gray-800">{fund.name}</h3>
+                    <h3 className="font-medium text-gray-700">{fund.name}</h3>
                     <p className="text-xs text-gray-500">{fund.category} • {fund.riskLevel} Risk</p>
                   </div>
                   <div className="flex justify-between text-sm mb-3">
@@ -198,7 +198,7 @@ export default function MutualFunds() {
 
           {/* SIP Calculator */}
           <div className="bg-white p-6 rounded-xl shadow-sm">
-            <h2 className="text-xl font-bold text-gray-800 mb-4">SIP Calculator</h2>
+            <h2 className="text-xl font-bold text-gray-700 mb-4">SIP Calculator</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <div className="mb-4">
@@ -214,7 +214,7 @@ export default function MutualFunds() {
                       onChange={(e) => setSipAmount(Number(e.target.value))}
                       className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
                     />
-                    <span className="ml-2 w-20 text-right text-gray-800 font-medium">{formatCurrency(sipAmount)}</span>
+                    <span className="ml-2 w-20 text-right text-gray-700 font-medium">{formatCurrency(sipAmount)}</span>
                   </div>
                 </div>
                 <div className="mb-4">
@@ -229,7 +229,7 @@ export default function MutualFunds() {
                       onChange={(e) => setSipDuration(Number(e.target.value))}
                       className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
                     />
-                    <span className="ml-2 w-20 text-right text-gray-800 font-medium">{sipDuration} Years</span>
+                    <span className="ml-2 w-20 text-right text-gray-700 font-medium">{sipDuration} Years</span>
                   </div>
                 </div>
                 <div className="mb-4">
@@ -244,16 +244,16 @@ export default function MutualFunds() {
                       onChange={(e) => setSipReturnRate(Number(e.target.value))}
                       className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
                     />
-                    <span className="ml-2 w-20 text-right text-gray-800 font-medium">{sipReturnRate}%</span>
+                    <span className="ml-2 w-20 text-right text-gray-700 font-medium">{sipReturnRate}%</span>
                   </div>
                 </div>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-medium text-gray-800 mb-3">Estimated Returns</h3>
+                <h3 className="font-medium text-gray-700 mb-3">Estimated Returns</h3>
                 <div className="grid grid-cols-3 gap-4 mb-4">
                   <div>
                     <p className="text-sm text-gray-500">Invested Amount</p>
-                    <p className="text-lg font-bold text-gray-800">₹{formatCurrency(sipResults.invested)}</p>
+                    <p className="text-lg font-bold text-gray-700">₹{formatCurrency(sipResults.invested)}</p>
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Est. Returns</p>
@@ -261,7 +261,7 @@ export default function MutualFunds() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Total Value</p>
-                    <p className="text-lg font-bold text-gray-800">₹{formatCurrency(sipResults.total)}</p>
+                    <p className="text-lg font-bold text-gray-700">₹{formatCurrency(sipResults.total)}</p>
                   </div>
                 </div>
                 <div className="relative h-4 bg-gray-200 rounded-full overflow-hidden">
@@ -285,20 +285,20 @@ export default function MutualFunds() {
 
           {/* Learn About Mutual Funds */}
           <div className="bg-white p-6 rounded-xl shadow-sm">
-            <h2 className="text-xl font-bold text-gray-800 mb-4">Learn About Mutual Funds</h2>
+            <h2 className="text-xl font-bold text-gray-700 mb-4">Learn About Mutual Funds</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-medium text-gray-800 mb-2">What are Mutual Funds?</h3>
+                <h3 className="font-medium text-gray-700 mb-2">What are Mutual Funds?</h3>
                 <p className="text-sm text-gray-600 mb-3">Mutual funds are investment vehicles that pool money from multiple investors to purchase securities.</p>
                 <a href="#" className="text-[#04B488] hover:text-[#039973] text-sm font-medium">Learn More →</a>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-medium text-gray-800 mb-2">Benefits of SIP</h3>
+                <h3 className="font-medium text-gray-700 mb-2">Benefits of SIP</h3>
                 <p className="text-sm text-gray-600 mb-3">Systematic Investment Plans help you invest regularly and benefit from rupee cost averaging.</p>
                 <a href="#" className="text-[#04B488] hover:text-[#039973] text-sm font-medium">Learn More →</a>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-medium text-gray-800 mb-2">Tax Benefits</h3>
+                <h3 className="font-medium text-gray-700 mb-2">Tax Benefits</h3>
                 <p className="text-sm text-gray-600 mb-3">Learn about ELSS funds and how mutual fund investments can help you save taxes.</p>
                 <a href="#" className="text-[#04B488] hover:text-[#039973] text-sm font-medium">Learn More →</a>
               </div>

@@ -110,14 +110,14 @@ export default function Header() {
               {isNotificationOpen && (
                 <div className="absolute right-0 mt-2 w-80 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
                   <div className="p-3 border-b border-gray-100 flex justify-between items-center">
-                    <h3 className="font-medium text-gray-800">Notifications</h3>
+                    <h3 className="font-medium text-gray-700">Notifications</h3>
                     <button className="text-sm text-[#04B488]">Mark all as read</button>
                   </div>
                   <div className="max-h-96 overflow-y-auto">
                     {notifications.map(notification => (
                       <div key={notification.id} className={`p-3 border-b border-gray-100 hover:bg-gray-50 ${notification.unread ? 'bg-gray-50' : ''}`}>
                         <div className="flex justify-between items-start">
-                          <h4 className="font-medium text-gray-800 text-sm">{notification.title}</h4>
+                          <h4 className="font-medium text-gray-700 text-sm">{notification.title}</h4>
                           <span className="text-xs text-gray-500">{notification.time}</span>
                         </div>
                         <p className="text-sm text-gray-600 mt-1">{notification.message}</p>
@@ -167,7 +167,7 @@ export default function Header() {
                         R
                       </div>
                       <div>
-                        <h3 className="font-medium text-gray-800">Rishabh Yadav</h3>
+                        <h3 className="font-medium text-gray-700">Rishabh Yadav</h3>
                         <p className="text-xs text-gray-500">ryadav3245@gmail.com</p>
                       </div>
                     </div>
@@ -290,7 +290,7 @@ export default function Header() {
                 </div>
               </div>
               <div className="ml-3">
-                <div className="text-base font-medium text-gray-800">Rishabh Yadav</div>
+                <div className="text-base font-medium text-gray-700">Rishabh Yadav</div>
                 <div className="text-sm font-medium text-gray-500">ryadav3245@gmail.com</div>
               </div>
             </div>

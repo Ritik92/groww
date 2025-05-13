@@ -19,7 +19,7 @@ export default function MutualFundOverview({ data }) {
     return (
         <div className="bg-white p-6 rounded-xl shadow-sm">
             <div className="flex items-center justify-between mb-4">
-                <h2 className="text-xl font-bold text-gray-800">Portfolio Overview</h2>
+                <h2 className="text-xl font-bold text-gray-700">Portfolio Overview</h2>
                 <div className="flex items-center">
                     <button className="text-[#04B488] hover:text-[#039973] font-medium px-2 py-1 border border-[#04B488] rounded-lg mr-2 text-sm">
                         Download Report
@@ -33,7 +33,7 @@ export default function MutualFundOverview({ data }) {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="bg-gray-50 p-4 rounded-lg">
                     <p className="text-sm text-gray-500">Current Value</p>
-                    <p className="text-2xl font-bold text-gray-800">{formatValue(data.currentValue)}</p>
+                    <p className="text-2xl font-bold text-gray-700">{formatValue(data.currentValue)}</p>
                     <div className="mt-2 text-xs text-gray-500">
                         <span className="inline-block px-2 py-0.5 bg-gray-100 rounded">
                             {formatValue(data.currentValue - data.currentValue / 30)} last month
@@ -43,7 +43,7 @@ export default function MutualFundOverview({ data }) {
                 
                 <div className="bg-gray-50 p-4 rounded-lg">
                     <p className="text-sm text-gray-500">Total Investment</p>
-                    <p className="text-2xl font-bold text-gray-800">{formatValue(data.totalInvestment)}</p>
+                    <p className="text-2xl font-bold text-gray-700">{formatValue(data.totalInvestment)}</p>
                     <div className="mt-2 text-xs text-gray-500">
                         <span className="inline-block px-2 py-0.5 bg-gray-100 rounded">
                             {data.funds.length} active funds

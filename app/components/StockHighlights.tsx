@@ -10,7 +10,7 @@ export default function StockHighlights() {
   return (
     <div className="bg-white p-6 rounded-xl shadow-sm">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-xl font-bold text-gray-800">Market Highlights</h2>
+        <h2 className="text-xl font-bold text-gray-700">Market Highlights</h2>
         <div className="flex items-center">
           <div className="flex mr-4">
             <button className="text-[#04B488] hover:text-[#039973] font-medium px-3 py-1 rounded border-b-2 border-[#04B488]">Stocks</button>
@@ -36,11 +36,11 @@ export default function StockHighlights() {
               <tr key={index} className="border-b border-gray-100 hover:bg-gray-50">
                 <td className="py-4 px-2">
                   <div>
-                    <p className="text-sm font-medium text-gray-800">{stock.name}</p>
+                    <p className="text-sm font-medium text-gray-700">{stock.name}</p>
                     <p className="text-xs text-gray-500">{stock.ticker}</p>
                   </div>
                 </td>
-                <td className="py-4 px-2 text-right text-sm font-medium text-gray-800">
+                <td className="py-4 px-2 text-right text-sm font-medium text-gray-700">
                   ₹{stock.price.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                 </td>
                 <td className={`py-4 px-2 text-right text-sm font-medium ${stock.change >= 0 ? 'text-[#04B488]' : 'text-red-500'}`}>

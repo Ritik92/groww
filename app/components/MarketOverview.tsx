@@ -10,7 +10,7 @@ export default function MarketOverview({ data }) {
             {isPositive ? '↑' : '↓'} {Math.abs(percentChange).toFixed(2)}%
           </div>
         </div>
-        <p className="text-xl text-gray-800 font-semibold">{value.toLocaleString('en-IN')}</p>
+        <p className="text-xl text-gray-700 font-semibold">{value.toLocaleString('en-IN')}</p>
         <div className={`flex items-center mt-1 ${isPositive ? 'text-[#04B488]' : 'text-red-500'} text-sm`}>
           <span>
             {isPositive ? '+' : ''}{change.toLocaleString('en-IN')}
@@ -35,7 +35,7 @@ export default function MarketOverview({ data }) {
   return (
     <div className="bg-white p-6 rounded-xl shadow-sm">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-xl font-bold text-gray-800">Market Overview</h2>
+        <h2 className="text-xl font-bold text-gray-700">Market Overview</h2>
         <div className="flex items-center">
           <div className="flex items-center text-xs text-gray-500 mr-4">
             <span className="w-2 h-2 bg-green-500 rounded-full mr-1"></span>
@@ -61,7 +61,7 @@ export default function MarketOverview({ data }) {
                 {metric.isDown ? '↓' : '↑'} {Math.abs(metric.change)}
               </span>
             </div>
-            <p className="text-base font-medium text-gray-800 mt-1">{metric.value.toLocaleString('en-IN')}</p>
+            <p className="text-base font-medium text-gray-700 mt-1">{metric.value.toLocaleString('en-IN')}</p>
           </div>
         ))}
       </div>

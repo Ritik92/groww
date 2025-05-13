@@ -166,7 +166,7 @@ export default function Footer() {
           
           {/* Links Sections */}
           <div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-4">Products</h3>
+            <h3 className="text-lg font-semibold text-gray-700 mb-4">Products</h3>
             <ul className="space-y-2">
               {footerLinks.products.map((link, index) => (
                 <li key={index}>
@@ -179,7 +179,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-4">About</h3>
+            <h3 className="text-lg font-semibold text-gray-700 mb-4">About</h3>
             <ul className="space-y-2">
               {footerLinks.about.map((link, index) => (
                 <li key={index}>
@@ -192,7 +192,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-4">Support</h3>
+            <h3 className="text-lg font-semibold text-gray-700 mb-4">Support</h3>
             <ul className="space-y-2">
               {footerLinks.support.map((link, index) => (
                 <li key={index}>
